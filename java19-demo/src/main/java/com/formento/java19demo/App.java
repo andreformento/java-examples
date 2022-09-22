@@ -1,4 +1,4 @@
-package com.formento;
+package com.formento.java19demo;
 
 public class App {
     public static void main(String[] args) {

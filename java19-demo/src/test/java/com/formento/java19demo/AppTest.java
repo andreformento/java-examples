@@ -1,9 +1,10 @@
-package com.formento;
+package com.formento.java19demo;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
@@ -34,10 +35,10 @@ public class AppTest {
     private String formatterPatternSwitch(Object o) {
         return switch (o) {
             case Integer i -> String.format("int %d", i);
-            case Long l    -> String.format("long %d", l);
-            case Double d  -> String.format("double %f", d);
-            case String s  -> String.format("String %s", s);
-            default        -> o.toString();
+            case Long l -> String.format("long %d", l);
+            case Double d -> String.format("double %f", d);
+            case String s -> String.format("String %s", s);
+            default -> o.toString();
         };
     }
 
