@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: web
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/webdb
+    username: postgres
+    password: postgres
+    pool:
+      enabled: true
+      initial-size: 10
+      max-size: 20
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+server:
+  port: 8080
