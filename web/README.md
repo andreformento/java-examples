@@ -44,3 +44,8 @@ curl -X PUT http://localhost:8080/api/users/1 \
 # Delete user
 curl -X DELETE http://localhost:8080/api/users/1
 ```
+
+### Create a new migration
+```sh
+  touch "./src/main/resources/db/migration/T$(date +%Y%m%d%H%M%S)__Your_description_here.sql"
+```

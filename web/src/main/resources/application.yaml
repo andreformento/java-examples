@@ -22,6 +22,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/webdb
     user: postgres
     password: postgres
+    # Use timestamp-based naming strategy
+    sql-migration-prefix: T
+    sql-migration-separator: __
+    sql-migration-suffixes: .sql
 
 server:
   port: 8080
