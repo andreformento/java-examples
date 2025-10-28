@@ -4,10 +4,13 @@
 
 ```bash
 # Start PostgreSQL database
-docker-compose up -d
+docker compose up -d --wait
 
 # Run the application
 ./mvnw spring-boot:run
+
+# Cleanup
+docker compose down -t 0 -v --remove-orphans
 ```
 
 ## Testing
