@@ -15,7 +15,7 @@ public class TestContainersConfig {
 
     @Container
     @ServiceConnection
-    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>(DockerImageName.parse("postgres:15"))
+    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>(DockerImageName.parse("postgres:17"))
             .withDatabaseName("testdb")
             .withUsername("test")
             .withPassword("test");
